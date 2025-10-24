@@ -12,7 +12,7 @@ Copier le code
 
 ---
 
-## 📚 Routes Étudiants
+##  Routes Étudiants
 
 ### 1. GET /students
 - **Description** : Récupère tous les étudiants.
@@ -93,7 +93,11 @@ Copier le code
   "id": 1,
   "solde_repas": 5500
 }
-📚 Routes Plats
+
+
+Routes Plats
+
+
 GET /meals
 Description : Récupère tous les plats disponibles.
 
@@ -111,7 +115,12 @@ Copier le code
   { "id": 2, "nom": "Sandwich", "prix": 800, "categorie": "Snack" },
   { "id": 3, "nom": "Café", "prix": 300, "categorie": "Boisson" }
 ]
-📚 Routes Réservations
+
+
+Routes Réservations
+
+
+
 1. GET /reservations
 Description : Récupère toutes les réservations.
 
@@ -167,37 +176,3 @@ Copier le code
 {
   "message": "Étudiant non trouvé"
 }
-⚡ Tests Postman
-Pour chaque route, créez un request dans Postman :
-
-Ajouter le Header : Content-Type: application/json
-
-Tester toutes les combinaisons :
-
-Étudiant inexistant
-
-Plat inexistant
-
-Solde suffisant / insuffisant
-
-Mise à jour du solde
-
-Espace pour captures d’écran :
-
-csharp
-Copier le code
-[Insérer ici les captures Postman pour chaque route]
-💾 Base de données
-Tables principales :
-
-etudiants : id, nom, email, solde_repas
-
-plats : id, nom, prix, categorie
-
-reservations : id, id_etudiant, id_plat, date
-
-Script d’initialisation : init_db.js
-
-nginx
-Copier le code
-node init_db.js
